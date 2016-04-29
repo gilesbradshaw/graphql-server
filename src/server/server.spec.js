@@ -91,7 +91,7 @@ describe('graphql', function() {
 
       expect(findStub).to.calledWithMatch({
         _id: {
-          $in: [friend1._id.toString(), friend2._id.toString()]
+          $in: [friend1.toString(), friend2.toString()]
         }
       }, {
         name: 1
